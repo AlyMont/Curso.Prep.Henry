@@ -10,7 +10,7 @@ const nuevoNum = 100;
 const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === 5;//ressta 
+const nuevaResta = 10 - 5 === 5;//resta 
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
