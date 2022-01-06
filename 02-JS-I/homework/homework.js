@@ -146,14 +146,19 @@ function esImpar(num) {
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
-  // Tu código:
   
+  const elCuadradoNum = num*num; 
+  console.log('elCuadradoNum '+elCuadradoNum)
+  return elCuadradoNum;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
-  // Tu código:
-  
+
+  const ElCuboNum = num*num*num; 
+  console.log(ElCuboNum)
+  return ElCuboNum;
+
 }
 
 function elevar(num, exponent) {
