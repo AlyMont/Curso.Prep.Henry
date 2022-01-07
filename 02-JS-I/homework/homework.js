@@ -155,16 +155,18 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
 
-  const ElCuboNum = num*num*num; 
-  console.log(ElCuboNum)
-  return ElCuboNum;
+  const elCuboNum = num*num*num; 
+  console.log(elCuboNum)
+  return elCuboNum;
 
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  // Tu código:
   
+  const elevarNum = num^exponent;
+  console.log('elevarNum: '+elevarNum);
+  return elevarNum;
 }
 
 function redondearNumero(num) {
@@ -190,7 +192,16 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if (numero>0){
+    return "Es positivo";
+  }
+  else if(numero<0){
+    return "Es negativo";
+  }
+  else {
+
+    return false //"El número Cero"
+  } 
 }
 
 function agregarSimboloExclamacion(str) {
