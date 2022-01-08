@@ -163,11 +163,14 @@ function elevarAlCubo(num) {
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  
-  const elevarNum = num^exponent;
-  console.log('elevarNum: '+elevarNum);
-  return elevarNum;
+  let result = 1;
+for (let i = 0; i < exponent; i++) {
+  result =result*num;
 }
+console.log('result: '+result);
+return result;
+}
+
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
