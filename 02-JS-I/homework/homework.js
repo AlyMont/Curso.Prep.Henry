@@ -147,7 +147,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   
-  const elCuadradoNum = num*num; 
+  var elCuadradoNum = num*num; 
   console.log('elCuadradoNum '+elCuadradoNum)
   return elCuadradoNum;
 }
@@ -155,8 +155,8 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
 
-  const elCuboNum = num*num*num; 
-  console.log(elCuboNum)
+  var elCuboNum = num*num*num; 
+  console.log(elCuboNum);
   return elCuboNum;
 
 }
@@ -165,29 +165,33 @@ function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   let result = 1;
 for (let i = 0; i < exponent; i++) {
-  result =result*num;
+  result = result*num;
 }
 console.log('result: '+result);
 return result;
 }
 
-
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  var redodearNumEntero = Math.round(num);
+  return redodearNumEntero;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+ var redodearNumArriba = Math.ceil(num);
+  return redodearNumArriba;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+
+var aleatorio = Math.random();
+console.log(aleatorio)
+  return aleatorio;
 }
 
 function esPositivo(numero) {
@@ -211,20 +215,28 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+   str =str+"!";
+  console.log(str);
+  return str;
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  var nombreApellido=nombre+ +apellido;
+  console.log(nombreApellido);
+  return nombreApellido;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+  var saludo = "Hola";
+  var saludoNombre=saludo +nombre;
+  console.log(saludoNombre);
+  return saludoNombre;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
