@@ -242,23 +242,27 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  var areaRectangulo =alto*ancho;
+  console.log(areaRectangulo);
+  return areaRectangulo;
 }
-
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  var perimtroCuadrado =4*lado;
+  console.log(perimtroCuadrado);
+  return perimtroCuadrado;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var areaTriangulo =(base*altura)/2;
+  console.log(areaTriangulo);
+  return areaTriangulo;
 }
-
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
@@ -266,7 +270,6 @@ function deEuroAdolar(euro){
   //Escribe tu código aquí
   
 }
-
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
@@ -276,8 +279,6 @@ function esVocal(letra){
   //Escribe tu código aquí
   
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
